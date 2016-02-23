@@ -37,7 +37,7 @@ import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.common.api.GoogleApiClient.ConnectionCallbacks;
-import com.google.android.gms.common.api.GoogleApiClient.OnConnectionFailedListener;;
+import com.google.android.gms.common.api.GoogleApiClient.OnConnectionFailedListener;
 import com.google.android.gms.maps.OnMapReadyCallback;
 
 import java.io.IOException;
@@ -329,8 +329,6 @@ public class UserLocationFragment extends Fragment implements OnMapReadyCallback
                                 address = strAddress.toString();
                             }
                             lastKnownLocationAddress = address;
-                            Log.e("SHABEER ", "I am at: " + lastKnownLocationAddress);
-
                         }
 
                     } catch (IOException e) {
@@ -355,8 +353,6 @@ public class UserLocationFragment extends Fragment implements OnMapReadyCallback
 
 
             private boolean checkInternetConnectivity() {
-
-                Log.e("SHABEER " ,  "checkInternetConnectivity");
                 ConnectivityManager connectivityManager
                         = (ConnectivityManager) this.getActivity().getSystemService(Context.CONNECTIVITY_SERVICE);
                 NetworkInfo activeNetworkInfo = connectivityManager.getActiveNetworkInfo();

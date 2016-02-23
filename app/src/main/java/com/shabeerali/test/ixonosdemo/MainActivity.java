@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
         nvView = (NavigationView) findViewById(R.id.nvView);
 
         // Setup drawer view
-        setupDrawerContent(nvView);;
+        setupDrawerContent(nvView);
 
         // Find our drawer view
         dlDrawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -67,11 +67,9 @@ public class MainActivity extends AppCompatActivity {
 
         if (Build.VERSION.SDK_INT >= 21) {
             getWindow().clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
-            //getWindow().setStatusBarColor(getResources().getColor(R.color.colorBlack, R.style.AppTheme));
-            getWindow().setStatusBarColor(getResources().getColor(R.color.colorBlack,this.getTheme()));
-
-
+            getWindow().setStatusBarColor(ContextCompat.getColor(this, R.color.colorBlack));
         }
+
         emailIntent = false;
         myUserInfo =  UserInfo.getInstance(this);
 

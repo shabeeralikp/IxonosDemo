@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_menu"
+            android:icon="@drawable/menu_back"
+            android:title="Menu" />
+        <item
+            android:id="@+id/nav_home"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_about"
+            android:title="About" />
+
+        <item
+            android:id="@+id/nav_logout"
+            android:title="Logout"
+            android:visible="false"/>
+    </group>
+
+</menu>

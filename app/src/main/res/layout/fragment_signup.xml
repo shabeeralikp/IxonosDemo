@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/colorPrimaryDark">
+
+        <TextView
+            android:id="@+id/txtSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="30dp"
+            android:text="Sign Up"
+            android:gravity="center"
+            android:padding="8dp"
+            android:layout_marginTop="65dp"
+            android:textAllCaps="true"
+            android:textColor="#00D7D7" />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:text=""
+            android:id="@+id/email"
+            android:layout_marginLeft="36dp"
+            android:layout_marginRight="36dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:padding="16dp"
+            android:background="#9effffff"
+            android:hint="Email Address"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff"
+            />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName|textCapSentences"
+            android:text=""
+            android:ems="10"
+            android:id="@+id/firstname"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="36dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="36dp"
+            android:layout_marginBottom="8dp"
+            android:padding="16dp"
+            android:background="#9effffff"
+            android:hint="First Name"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff"
+            />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName|textCapSentences"
+            android:text=""
+            android:ems="10"
+            android:id="@+id/lastname"
+            android:layout_gravity="center_horizontal"
+            android:padding="16dp"
+            android:background="#9effffff"
+            android:layout_marginLeft="36dp"
+            android:layout_marginRight="36dp"
+            android:layout_marginBottom="24dp"
+            android:layout_marginTop="8dp"
+            android:hint="Last Name"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff" />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Go"
+            android:id="@+id/goButton"
+            android:textColor="#ffffff"
+            android:textSize="24dp"
+            android:textAllCaps="false"
+            android:layout_marginLeft="36dp"
+            android:layout_marginRight="36dp"
+            android:layout_marginTop="24dp"
+            android:padding="16dp"
+            android:background="@drawable/button_border"
+            />
+
+
+    </LinearLayout>
+
+</ScrollView>
+
+    <!--android:textColor="#d3ffffff" -->

@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".MainActivity">
+
+<fragment
+    android:id="@+id/googleMap"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    class="com.google.android.gms.maps.MapFragment"
+    android:layout_below="@+id/latlongLocation" />
+
+<TextView
+    android:id="@+id/latlongLocation"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:layout_alignParentTop="true"
+    android:background="@color/cloudy_gray"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:textColor="#00D7D7"
+    android:textSize="18dp" />
+</RelativeLayout>
